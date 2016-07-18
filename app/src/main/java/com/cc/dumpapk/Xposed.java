@@ -13,7 +13,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 public class Xposed implements IXposedHookLoadPackage {
 
     private static final String DUMPAPK = "com.cc.dumpapk";
-    private static final String TARGET = "com.cc.test";
+    private static final String TARGET = "com.greenpoint.android.mc10086.activity";
     private static final boolean DEBUG = false;
     @Override
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam loadPackageParam) throws Throwable {

@@ -181,7 +181,7 @@ public class ModuleContext {
     }
 
     public HashMap<String, DexFileInfo> dumpDexFileInfo() {
-        HashMap<String, DexFileInfo> dexs = new HashMap<>(dynLoadedDexInfo);
+        HashMap<String, DexFileInfo> dexs = new HashMap<String, DexFileInfo>(dynLoadedDexInfo);
         Object dexPathList = RefInvoke.getFieldOjbect("dalvik.system.BaseDexClassLoader", getBaseClassLoader(), "pathList");
         Object[] dexElements = (Object[]) RefInvoke.getFieldOjbect("dalvik.system.DexPathList", dexPathList, "dexElements");
         DexFile dexFile = null;

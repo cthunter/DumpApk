@@ -9,7 +9,7 @@
 #include "dump.h"
 
 struct CookieMap *allCookie = NULL;
-static const char *dumppath = "/data/data/com.cc.test/";
+static const char *dumppath = "/data/data/com.greenpoint.android.mc10086.activity/";
 
 void saveCookie(JNIEnv *env, jobject obj, jint cookie, jobject loader);
 
